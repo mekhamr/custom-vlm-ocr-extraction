@@ -1,0 +1,17 @@
+
+python-multipart
+torch==2.4.1+cpu
+torchvision==0.19.1+cpu
+torchaudio==2.4.1+cpu
+transformers==4.46.0
+tokenizers==0.20.3
+peft==0.13.2
+accelerate==0.34.2
+datasets
+pillow
+einops
+timm
+fastapi
+uvicorn
+wandb == 0.23.1
+

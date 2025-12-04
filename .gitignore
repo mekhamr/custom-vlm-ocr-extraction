@@ -1,0 +1,104 @@
+##############################
+# PYTHON
+##############################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.dist-info/
+
+##############################
+# VIRTUAL ENVIRONMENTS
+##############################
+env/
+venv/
+.venv/
+
+##############################
+# VS CODE
+##############################
+.vscode/
+*.code-workspace
+
+##############################
+# MODEL / CHECKPOINT FILES
+##############################
+# Florence-2 / LoRA / Adapters / safetensors
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.h5
+
+# Entire model folders
+model_v1/
+output/
+checkpoint*/
+runs/
+checkpoints/
+
+##############################
+# HUGGINGFACE ARTIFACTS
+##############################
+tokenizer.json
+tokenizer_config.json
+preprocessor_config.json
+special_tokens_map.json
+vocab.json
+merges.txt
+
+# Cache / downloads
+huggingface/
+hf_cache/
+transformers_cache/
+cache/
+*.msgpack
+
+##############################
+# TRAINING OUTPUTS
+##############################
+wandb/
+logs/
+*.log
+*.event
+
+##############################
+# DOCKER
+##############################
+docker/
+docker-build/
+*.tar
+
+##############################
+# JUPYTER / COLAB
+##############################
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+##############################
+# SYSTEM / OS FILES
+##############################
+.DS_Store
+Thumbs.db
+desktop.ini
+
+##############################
+# ENVIRONMENT VARIABLES
+##############################
+.env
+.env.local
+.env.production
+.env.development
+
+##############################
+# OTHER LARGE FILES
+##############################
+*.zip
+*.gz
+*.7z
+*.tar.gz
+*.rar
+*.pickle
+*.pkl
