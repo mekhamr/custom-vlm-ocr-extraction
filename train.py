@@ -21,7 +21,7 @@ def collate_fn(batch):
     for item in batch:
         file_name = item["file_name"]
 
-        # Smart path: only 10.png & 11.png are in test_images
+        
         if file_name in ["10.png", "11.png"]:
             img_path = f"test_images/{file_name}"
         else:

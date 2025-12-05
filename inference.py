@@ -28,14 +28,14 @@ def ocr_image(image_path):
     return ocr_result
 
 def save_to_jsonl(image_path, text):
-    output_file = "output.jsonl"   # renamed file
+    output_file = "output.jsonl"   
 
     record = {
         "filename": os.path.basename(image_path),
         "extracted_text": text
     }
 
-    # Append as one-line JSON
+    
     with open(output_file, "a", encoding="utf-8") as f:
         f.write(json.dumps(record, ensure_ascii=False) + "\n")
 

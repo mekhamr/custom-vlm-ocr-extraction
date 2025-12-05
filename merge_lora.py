@@ -13,10 +13,10 @@ base_model = AutoModelForCausalLM.from_pretrained(
 print("Loading best LoRA adapter (checkpoint-60)")
 model = PeftModel.from_pretrained(base_model, "./output/checkpoint-60")
 
-print("Merging LoRA weights into base model...")
+print("Merging LoRA weights into base model")
 merged_model = model.merge_and_unload()
 
-print("Saving final merged model to model_v1/ ...")
+print("Saving final merged model to model_v1/ ")
 merged_model.save_pretrained("model_v1")
 AutoProcessor.from_pretrained("microsoft/Florence-2-base", trust_remote_code=True).save_pretrained("model_v1")
 

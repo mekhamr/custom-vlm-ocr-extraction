@@ -5,10 +5,10 @@ import torch
 
 model_id = "microsoft/Florence-2-base"
 
-print("Loading processor...")
+print("Loading processor")
 processor = AutoProcessor.from_pretrained(model_id, trust_remote_code=True)
 
-print("Loading Florence-2-base ...")
+print("Loading Florence-2-base")
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
     trust_remote_code=True,

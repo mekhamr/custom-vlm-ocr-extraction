@@ -5,7 +5,7 @@ import torch
 from transformers import AutoProcessor, AutoModelForCausalLM
 import io
 
-print("Loading final pharmacy OCR model")
+print("Loading final  invoice OCR model")
 processor = AutoProcessor.from_pretrained("model_v1", trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained("model_v1", trust_remote_code=True)
 model.eval()
