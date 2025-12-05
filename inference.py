@@ -7,7 +7,7 @@ import torch
 import os
 
 # Load merged model
-print("Loading final pharmacy OCR model...")
+print("Loading final pharmacy OCR model")
 processor = AutoProcessor.from_pretrained("model_v1", trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained("model_v1", trust_remote_code=True)
 
